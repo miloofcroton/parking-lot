@@ -7,6 +7,7 @@
 * `/cars/search` Display cars. Filter by search term (input plate)
 * `/cars/create` Create a new car
 * `/lot` List all cars in the parking lot
+* `/lot/search` List all cars in the parking lot. Filter by search term
 
 ## Components
 
