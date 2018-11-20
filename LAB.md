@@ -72,12 +72,17 @@
   * reducer for all cars
   * contains all created cars
   * contain searchTerm
+  * Handles `REGISTER_CAR`, `CAR_UPDATE_CAR_SEARCH_TERM`
 * `lot.js`
   * reducer containing state of the lot
   * has cars in the lot
   * contain searchTerm
+  * `Handles `LOT_UPDATE_CAR_SEARCH_TERM`, `LOT_CAR_ARRIVED`, `LOT_CAR_DEPARTED`
+* `lotUse.js`
+  * reducer containing lot use state
 * `index.js`
-  * combine `cars.js` and `lot.js`
+  * combine `cars.js`, `lot.js`, `lotUse.js`
+  * Handles `LOT_CAR_ARRIVED`
 
 ## Selectors
 
@@ -87,6 +92,7 @@
 * `lot.js`
   * `getLotCars(state)`
   * `getLotCarsBySearch(state)`
+* `lotUse.js`
   * `getTimesInLot(state, id)`
 
 ## Actions
