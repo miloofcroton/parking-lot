@@ -23,7 +23,7 @@
   * Presentational component
   * Display the make/model/plate of a car
   * Link to `CarDetail`
-* `Cars.js'
+* `Cars.js`
   * Presentational component
   * Display a list of `Car` components
 * `RegisterCarForm.js`
@@ -86,6 +86,7 @@
 * `lot.js`
   * `getLotCars(state)`
   * `getLotCarsBySearch(state)`
+  * `getTimesInLot(state, id)`
 
 ## Actions
 
