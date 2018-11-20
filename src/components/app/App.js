@@ -8,7 +8,7 @@ import Footer from './footer/Footer';
 import 'normalize.css';
 import styles from './App.css';
 
-export default function App() {
+const App = () => {
 
   return (
     <Router>
@@ -24,3 +24,5 @@ export default function App() {
     </Router>
   );
 }
+
+export default App
