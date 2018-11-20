@@ -1,0 +1,27 @@
+@import '../../../styles/variables.css';
+
+.header {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.nav {
+  margin: 0px 0px 15px 0px;
+
+}
+
+.link {
+  box-sizing: border-box;
+
+  text-decoration: none;
+  color: var(--secondary);
+  margin: 5px;
+  padding: 8px;
+  border: 1px solid lightyellow;
+
+
+  &:hover {
+    color: var(--darksecondary);
+    border: 1px solid var(--darksecondary);
+  }
+}

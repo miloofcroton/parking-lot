@@ -1,0 +1,8 @@
+@import '../../../styles/variables.css';
+
+.footer {
+  background-color: var(--primary);
+  p {
+      color: var(--secondary);
+  }
+}
