@@ -16,8 +16,9 @@ const App = () => {
         <Header />
         <Switch>
           <Route component={ROUTES.ABOUT.Component} path={ROUTES.ABOUT.path} />
+          <Route component={ROUTES.HOME.Component} path={ROUTES.HOME.path} />
 
-          <Redirect to={ROUTES.ABOUT.path} />
+          <Redirect to={ROUTES.HOME.path} />
         </Switch>
         <Footer />
       </Fragment>

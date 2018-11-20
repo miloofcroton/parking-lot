@@ -13,3 +13,5 @@ search through lists of cars
 ## Imports
 
 Importing is slightly different than we're used to. Importing a component comes from the index.js, but ES6 Javascript allows you to import the folder and the index.js will implicitly be imported. In other words, `import App from 'components/App'` is equivalent to `import App from 'components/App/index.js'`. This is better than how we were doing it before, as `import App from 'components/app/App'` (which implicitly does `App.js` for `App`) in my opinion.
+
+See here for more on `index.js`: https://alligator.io/react/index-js-public-interfaces/
