@@ -1,9 +1,9 @@
 import React from 'react';
-import Footer from './Footer';
 import { shallow } from 'enzyme';
+import Footer from './Footer';
 
-describe('Footer Component', () => {
-  it('should be a footer', () => {
+describe('<Footer />', () => {
+  test('renders', () => {
     const wrapper = shallow(<Footer />);
     expect(wrapper).toMatchSnapshot();
   });

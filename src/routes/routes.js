@@ -1,4 +1,4 @@
-import About from '../components/pages/about/About';
+import About from '../components/pages/About';
 
 
 export const ROUTES = {

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import styles from './Pager.css';
 
-function Pager({ currentPage, totalPages, updatePage }) {
+const Pager = ({ currentPage, totalPages, updatePage }) => {
 
   const page = (currentPage) ? currentPage : 0;
 
@@ -36,7 +36,7 @@ function Pager({ currentPage, totalPages, updatePage }) {
       {nextButton}
     </div>
   );
-}
+};
 
 Pager.propTypes = {
   currentPage: PropTypes.number.isRequired,
