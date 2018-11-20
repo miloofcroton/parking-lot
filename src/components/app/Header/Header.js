@@ -15,7 +15,7 @@ const Header = () => {
           className={styles.link}
         >
           About
-          </Link>
+        </Link>
       </nav>
     </header>
   );
