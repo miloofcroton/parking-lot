@@ -12,12 +12,13 @@
 ## Components
 
 * `Header.js`
-  * link to `/cars`
-  * link to `/lot`
+  * link to `/cars/search`
+  * link to `/lot/search`
+  * link to `/cars/create`
 * `CarDetail.js`
   * Display the make/model/plate of the car
   * Display the status of the car (is it in the lot)
-  * Display the number of times the car has used the lot
+  * Display the numbers of times the car has used the lot
   * Display a button to either add the car to a lot or remove it
 * `Car.js`
   * Presentational component
@@ -108,8 +109,6 @@
   * Write a test for each thing a component should Display (from the component section above)
   * `RegisterCarForm` call the onSubmit function onSubmit.
   * `SearchCars` call an onChange function
-*
-
 * Unit test all reducers, action creators, and selectors
 
 ## Rubric
