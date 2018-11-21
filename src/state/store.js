@@ -24,9 +24,25 @@ store.dispatch(registerCar({
   inLot: false,
   lotUses: 5,
 }));
-store.dispatch(registerCar(new Date, 1.05));
-store.dispatch(registerCar(new Date, 1.35));
-store.dispatch(carUpdateCarSearchTerm(new Date, 10.35));
-store.dispatch(carUpdateCarSearchTerm(new Date, 13.35));
+console.log('Registered a car', store.getState());
+store.dispatch(registerCar({
+  make: 'Toyota',
+  model: 'Tacoma',
+  plate: 'No',
+  inLot: false,
+  lotUses: 5,
+}));
+console.log('Registered a car', store.getState());
+store.dispatch(registerCar({
+  make: 'Toyota',
+  model: 'Tacoma',
+  plate: 'No',
+  inLot: false,
+  lotUses: 5,
+}));
+console.log('Registered a car', store.getState());
+
+// store.dispatch(carUpdateCarSearchTerm(new Date, 10.35));
+// store.dispatch(carUpdateCarSearchTerm(new Date, 13.35));
 
 export default store;

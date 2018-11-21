@@ -1,5 +1,5 @@
 export const REGISTER_CAR = 'REGISTER_CAR';
-export const registerCar = (make, model, plate, inLot, lotUses) => {
+export const registerCar = ({ make, model, plate, inLot, lotUses }) => {
   return {
     type: REGISTER_CAR,
     payload: { make, model, plate, inLot, lotUses }

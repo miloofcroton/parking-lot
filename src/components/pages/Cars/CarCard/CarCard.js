@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './CarCard.css'
 
 const CarCard = ({ plate, make, model }) => {
   return (
-    <li>
-      plate: {plate}
-      make: {make}
-      model: {model}
-    </li>
+    <div className={styles.carCard}>
+      <p>plate: {plate}</p>
+      <p>make: {make}</p>
+      <p>model: {model}</p>
+    </div>
   );
 };
 
