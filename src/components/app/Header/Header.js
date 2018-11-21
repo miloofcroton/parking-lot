@@ -9,6 +9,7 @@ const Header = () => {
 
   const links = [
     { label: 'Home', path: '/home' },
+    { label: 'Cars', path: '/cars' },
     { label: 'About', path: '/about' }
   ];
   const LinkComponents = links.map(link => {

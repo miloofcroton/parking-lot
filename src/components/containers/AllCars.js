@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Cars from '../../components/pizza/Pizzas';
+import Cars from '../Pages/Cars';
 import { getCars } from '../../selectors/cars';
 // import { sellCheesePizza } from '../../actions/cars';
 

@@ -17,6 +17,7 @@ const App = () => {
         <Switch>
           <Route component={ROUTES.ABOUT.Component} path={ROUTES.ABOUT.path} />
           <Route component={ROUTES.HOME.Component} path={ROUTES.HOME.path} />
+          <Route component={ROUTES.CARS.Component} path={ROUTES.CARS.path} />
 
           <Redirect to={ROUTES.HOME.path} />
         </Switch>
