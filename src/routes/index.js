@@ -1,6 +1,6 @@
 import About from '../components/pages/About';
 import Home from '../components/pages/Home';
-import Cars from '../components/pages/Cars';
+import AllCars from '../components/containers/AllCars';
 
 
 export const ROUTES = {
@@ -16,7 +16,7 @@ export const ROUTES = {
   },
   CARS: {
     path: '/cars/',
-    Component: Cars,
+    Component: AllCars,
     linkTo: () => '/cars'
   }
 };

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import Cars from '../Pages/Cars';
-import { getCars } from '../../selectors/cars';
+import Cars from '../pages/Cars';
+import { getCars } from '../../state/selectors/cars';
 // import { sellCheesePizza } from '../../actions/cars';
 
 const mapStateToProps = state => ({
