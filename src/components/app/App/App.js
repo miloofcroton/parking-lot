@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
-import { ROUTES } from '../../routes/routes';
+import { ROUTES } from '../../../routes';
 
-import Header from './Header';
-import Footer from './Footer';
+import Header from '../Header';
+import Footer from '../Footer';
 
 import 'normalize.css';
 import styles from './App.css';
@@ -24,6 +24,6 @@ const App = () => {
       </Fragment>
     </Router>
   );
-}
+};
 
-export default App
+export default App;
