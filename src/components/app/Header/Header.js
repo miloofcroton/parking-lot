@@ -8,9 +8,10 @@ import config from '../../../site/config';
 const Header = () => {
 
   const links = [
+    { label: 'About', path: '/about' },
     { label: 'Home', path: '/home' },
     { label: 'Cars', path: '/cars' },
-    { label: 'About', path: '/about' }
+    { label: 'Register', path: '/cars/new' }
   ];
   const LinkComponents = links.map(link => {
     return (

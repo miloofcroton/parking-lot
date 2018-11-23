@@ -27,7 +27,8 @@ export default function reducer(state = initialState, { type, payload }) {
       return {
         searchTerm: state.searchTerm,
         list: {
-          ...state.list, [uuid()]: payload
+          ...state.list,
+          [uuid()]: { ...payload, inLot: false, lotUses: 0 }
         }
       };
     case CAR_UPDATE_CAR_SEARCH_TERM:
