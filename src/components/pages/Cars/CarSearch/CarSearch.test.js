@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import CarFilter from './CarFilter';
+import CarSearch from './CarSearch';
 
-describe('<CarFilter />', () => {
+describe('<CarSearch />', () => {
   test('renders', () => {
-    const wrapper = shallow(<CarFilter />);
+    const wrapper = shallow(<CarSearch />);
     expect(wrapper).toMatchSnapshot();
   });
 });

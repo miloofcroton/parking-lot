@@ -3,6 +3,7 @@ import AllCars from '../components/containers/AllCars';
 import Home from '../components/pages/Home';
 import CarDetail from '../components/containers/CarDetail';
 import CarForm from '../components/containers/CarForm';
+import CarSearchAll from '../components/containers/CarSearchAll';
 
 export const ROUTES = {
   ABOUT: {
@@ -29,5 +30,10 @@ export const ROUTES = {
     path: '/cars/new',
     Component: CarForm,
     linkTo: () => '/cars/new'
-  }
+  },
+  CAR_SEARCH_ALL: {
+    path: '/cars/search',
+    Component: CarSearchAll,
+    linkTo: () => '/cars/search'
+  },
 };

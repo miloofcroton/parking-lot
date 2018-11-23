@@ -2,9 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CarCard from '../CarCard';
 import styles from './CarList.css';
+import { Link } from 'react-router-dom';
+import { ROUTES } from '../../../../routes';
 
 const CarList = ({ cars }) => {
-
 
   const carList = cars.map(car => {
     return (
@@ -20,7 +21,6 @@ const CarList = ({ cars }) => {
 
   return (
     <div>
-      <h2>Pick A Car, Any Car</h2>
       <div className={styles.carList}>
         {carList}
       </div>
