@@ -1,7 +1,8 @@
 import About from '../components/pages/About';
-import Home from '../components/pages/Home';
 import AllCars from '../components/containers/AllCars';
-
+import Home from '../components/pages/Home';
+// import CarDetail from '../components/pages/Cars/CarDetail';
+import CarDetail from '../components/containers/CarDetail';
 
 export const ROUTES = {
   ABOUT: {
@@ -18,5 +19,10 @@ export const ROUTES = {
     path: '/cars/',
     Component: AllCars,
     linkTo: () => '/cars'
+  },
+  CAR_DETAIL: {
+    path: '/cars/:id',
+    Component: CarDetail,
+    linkTo: id => `/cars/${id}`
   }
 };

@@ -1,9 +1,7 @@
+/* eslint-disable no-console */
+
 import { createStore } from 'redux';
 import reducer from './reducers'; // same as './reducers/index'
-import {
-  registerCar,
-  carUpdateCarSearchTerm
-} from './actions/cars';
 
 const store = createStore(
   reducer,
@@ -15,34 +13,6 @@ store.subscribe(() => {
   console.log('State Changes!');
 });
 
-console.log(store.getState());
-
-store.dispatch(registerCar({
-  make: 'Toyota',
-  model: 'Tacoma',
-  plate: 'No',
-  inLot: false,
-  lotUses: 5,
-}));
-console.log('Registered a car', store.getState());
-store.dispatch(registerCar({
-  make: 'Toyota',
-  model: 'Tacoma',
-  plate: 'No',
-  inLot: false,
-  lotUses: 5,
-}));
-console.log('Registered a car', store.getState());
-store.dispatch(registerCar({
-  make: 'Toyota',
-  model: 'Tacoma',
-  plate: 'No',
-  inLot: false,
-  lotUses: 5,
-}));
-console.log('Registered a car', store.getState());
-
-// store.dispatch(carUpdateCarSearchTerm(new Date, 10.35));
-// store.dispatch(carUpdateCarSearchTerm(new Date, 13.35));
+console.log('initial state', store.getState());
 
 export default store;

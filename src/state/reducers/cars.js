@@ -1,16 +1,37 @@
-import {
-  REGISTER_CAR,
-  CAR_UPDATE_CAR_SEARCH_TERM
-} from '../actions/cars';
+import { REGISTER_CAR, CAR_UPDATE_CAR_SEARCH_TERM } from '../actions/cars';
+import uuid from 'uuid/v4';
+const chance = require('chance').Chance();
 
-const initialState = [];
+const cars = Array.apply(null, { length: 100 }).reduce((acc) => {
 
-export default function reducer(state = initialState, action) {
-  switch(action.type) {
+  acc[uuid()] = {
+    plate: chance.word({ length: 5 }),
+    make: chance.company(),
+    model: chance.animal(),
+    inLot: chance.bool({ likelihood: 30 }),
+    lotUses: chance.natural({ min: 0, max: 20 })
+  };
+
+  return acc;
+}, {});
+
+
+const initialState = {
+  searchTerm: '',
+  list: cars
+};
+
+export default function reducer(state = initialState, { type, payload }) {
+  switch(type) {
     case REGISTER_CAR:
-      return [...state, action.payload];
+      return {
+        searchTerm: state.searchTerm,
+        list: {
+          ...state.list, [uuid()]: payload
+        }
+      };
     case CAR_UPDATE_CAR_SEARCH_TERM:
-      return { ...state, cars: [...state['cars'], action.payload] };
+      return { ...state, searchTerm: payload };
     default:
       return state;
   }

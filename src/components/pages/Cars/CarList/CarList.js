@@ -13,6 +13,7 @@ const CarList = ({ cars }) => {
         make={car.make}
         model={car.model}
         plate={car.plate}
+        id={car.id}
       />
     );
   });

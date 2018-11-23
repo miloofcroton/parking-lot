@@ -15,10 +15,10 @@ const App = () => {
       <Fragment>
         <Header />
         <Switch>
-          <Route component={ROUTES.ABOUT.Component} path={ROUTES.ABOUT.path} />
-          <Route component={ROUTES.HOME.Component} path={ROUTES.HOME.path} />
-          <Route component={ROUTES.CARS.Component} path={ROUTES.CARS.path} />
-
+          <Route exact component={ROUTES.ABOUT.Component} path={ROUTES.ABOUT.path} />
+          <Route exact component={ROUTES.HOME.Component} path={ROUTES.HOME.path} />
+          <Route exact component={ROUTES.CARS.Component} path={ROUTES.CARS.path} />
+          <Route component={ROUTES.CAR_DETAIL.Component} path={ROUTES.CAR_DETAIL.path} />
           <Redirect to={ROUTES.HOME.path} />
         </Switch>
         <Footer />
