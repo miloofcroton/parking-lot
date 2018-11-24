@@ -8,6 +8,15 @@ export const getCars = state => {
   });
 };
 
+export const getLotCars = state => {
+  return Object.keys(state.cars.list).reduce((acc, id) => {
+    if(getCar(state, id).inLot == true) {
+      acc.push(getCar(state, id));
+    }
+    return acc;
+  }, []);
+};
+
 export const searchCars = (state) => {
   const { list, searchTerm } = state.cars;
   const matches = ['plate', 'make', 'model'];

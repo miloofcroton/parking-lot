@@ -4,8 +4,20 @@ export const registerCar = (make, model, plate) => ({
   payload: { make, model, plate }
 });
 
-export const CAR_UPDATE_CAR_SEARCH_TERM = 'CAR_UPDATE_CAR_SEARCH_TERM';
-export const carUpdateCarSearchTerm = (searchTerm) => ({
-  type: CAR_UPDATE_CAR_SEARCH_TERM,
+export const UPDATE_SEARCH = 'UPDATE_SEARCH';
+export const updateSearch = (searchTerm) => ({
+  type: UPDATE_SEARCH,
   payload: searchTerm
+});
+
+export const CAR_ARRIVED = 'CAR_ARRIVED';
+export const carArrived = id => ({
+  type: CAR_ARRIVED,
+  payload: id
+});
+
+export const CAR_DEPARTED = 'CAR_DEPARTED';
+export const carDeparted = id => ({
+  type: CAR_DEPARTED,
+  payload: id
 });

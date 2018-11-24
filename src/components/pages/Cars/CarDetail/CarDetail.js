@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CarDetail = ({ car, lotCarDeparted, lotCarArrived }) => {
+const CarDetail = ({ car, carDeparted, carArrived }) => {
   const { plate, make, model, inLot, lotUses, id } = car;
-  const lotHandler = () => inLot ? lotCarDeparted(id) : lotCarArrived(id);
+  const lotHandler = () => inLot ? carDeparted(id) : carArrived(id);
   const lotString = inLot ? 'Remove from lot' : 'Add to lot';
 
   return (

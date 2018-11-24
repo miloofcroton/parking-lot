@@ -8,7 +8,7 @@ export default class CarSearch extends PureComponent {
 
   static propTypes = {
     cars: PropTypes.array.isRequired,
-    updateSearchTerm: PropTypes.func.isRequired
+    updateSearch: PropTypes.func.isRequired
   };
 
   componentDidMount() {
@@ -27,7 +27,7 @@ export default class CarSearch extends PureComponent {
 
   doSearch = () => {
     const { q } = this.getQuery();
-    this.props.updateSearchTerm(q);
+    this.props.updateSearch(q);
   };
 
   updateHistory = (options) => {
