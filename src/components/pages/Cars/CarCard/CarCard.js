@@ -22,7 +22,8 @@ const CarCard = ({ plate, make, model, id }) => {
 CarCard.propTypes = {
   plate: PropTypes.string.isRequired,
   make: PropTypes.string.isRequired,
-  model: PropTypes.string.isRequired
+  model: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired
 };
 
 export default CarCard;

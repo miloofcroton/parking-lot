@@ -4,7 +4,8 @@ import CarForm from './CarForm';
 
 describe('<CarForm />', () => {
   test('renders', () => {
-    const wrapper = shallow(<CarForm />);
+    const registerCarFn = jest.fn();
+    const wrapper = shallow(<CarForm registerCar={registerCarFn} />);
     expect(wrapper).toMatchSnapshot();
   });
 });

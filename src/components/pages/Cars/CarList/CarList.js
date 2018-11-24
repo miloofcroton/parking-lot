@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CarCard from '../CarCard';
 import styles from './CarList.css';
-import { Link } from 'react-router-dom';
-import { ROUTES } from '../../../../routes';
 
 const CarList = ({ cars }) => {
 

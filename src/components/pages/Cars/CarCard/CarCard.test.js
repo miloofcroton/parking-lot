@@ -4,7 +4,14 @@ import CarCard from './CarCard';
 
 describe('<CarCard />', () => {
   test('renders', () => {
-    const wrapper = shallow(<CarCard />);
+    const wrapper = shallow(
+      <CarCard
+        plate='abcdef'
+        make='Ford'
+        model='F150'
+        id='123-123-123-123'
+      />
+    );
     expect(wrapper).toMatchSnapshot();
   });
 });
