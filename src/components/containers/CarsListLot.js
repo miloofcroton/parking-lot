@@ -1,10 +1,9 @@
 import { connect } from 'react-redux';
 import CarList from '../pages/Cars/CarList';
-import { getCars } from '../../state/selectors/cars';
-// import { sellCheesePizza } from '../../actions/cars';
+import { getLotCars } from '../../state/selectors/lot';
 
 const mapStateToProps = state => ({
-  cars: getCars(state)
+  cars: getLotCars(state)
 });
 
 export default connect(

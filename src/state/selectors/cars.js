@@ -8,7 +8,7 @@ export const getCars = state => {
   });
 };
 
-export const searchCars = (state) => {
+export const searchCars = state => {
   const { list, searchTerm } = state.cars;
   const matches = ['plate', 'make', 'model'];
   return Object.keys(list).reduce((acc, id) => {

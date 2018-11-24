@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import CarSearch from '../pages/Cars/CarSearch';
-import { carUpdateSearchTerm } from '../../state/actions/cars';
+import { carUpdateCarSearchTerm } from '../../state/actions/cars';
 import { searchCars } from '../../state/selectors/cars';
 
 const mapStateToProps = state => ({
@@ -8,7 +8,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  updateSearchTerm: (searchTerm) => dispatch(carUpdateSearchTerm(searchTerm))
+  updateSearchTerm: (searchTerm) => dispatch(carUpdateCarSearchTerm(searchTerm))
 });
 
 export default connect(
