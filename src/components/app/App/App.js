@@ -21,6 +21,7 @@ const App = () => {
           <Route exact component={ROUTES.LOT.Component} path={ROUTES.LOT.path} />
           <Route exact component={ROUTES.CAR_FORM.Component} path={ROUTES.CAR_FORM.path} />
           <Route exact component={ROUTES.CAR_SEARCH_ALL.Component} path={ROUTES.CAR_SEARCH_ALL.path} />
+          <Route exact component={ROUTES.CAR_SEARCH_LOT.Component} path={ROUTES.CAR_SEARCH_LOT.path} />
           <Route component={ROUTES.CAR_DETAIL.Component} path={ROUTES.CAR_DETAIL.path} />
           <Redirect to={ROUTES.HOME.path} />
         </Switch>

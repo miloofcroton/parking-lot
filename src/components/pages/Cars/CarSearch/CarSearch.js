@@ -11,26 +11,27 @@ export default class CarSearch extends PureComponent {
     updateSearch: PropTypes.func.isRequired
   };
 
-  componentDidMount() {
+  componentDidMount = () => {
+    this.updateHistory({ q: '' });
     this.doSearch();
-  }
+  };
 
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate = (prevProps, prevState) => {
     if(prevProps.location.search !== this.props.location.search) {
       this.doSearch();
     }
-  }
+  };
 
   getQuery = () => {
     return queryString.parse(this.props.location.search.slice(1));
-  }
+  };
 
   doSearch = () => {
     const { q } = this.getQuery();
     this.props.updateSearch(q);
   };
 
-  updateHistory = (options) => {
+  updateHistory = options => {
     const q = options.q || '';
     const searchQuery = queryString.stringify({ q });
     this.props.history.push({

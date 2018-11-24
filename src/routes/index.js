@@ -1,10 +1,11 @@
 import About from '../components/pages/About';
+import Home from '../components/pages/Home';
 import CarListAll from '../components/containers/CarListAll';
 import CarListLot from '../components/containers/CarListLot';
-import Home from '../components/pages/Home';
+import CarSearchAll from '../components/containers/CarSearchAll';
+import CarSearchLot from '../components/containers/CarSearchLot';
 import CarDetail from '../components/containers/CarDetail';
 import CarForm from '../components/containers/CarForm';
-import CarSearchAll from '../components/containers/CarSearchAll';
 
 export const ROUTES = {
   ABOUT: {
@@ -41,5 +42,10 @@ export const ROUTES = {
     path: '/cars/search',
     Component: CarSearchAll,
     linkTo: () => '/cars/search'
+  },
+  CAR_SEARCH_LOT: {
+    path: '/lot/search',
+    Component: CarSearchLot,
+    linkTo: () => '/lot/search'
   },
 };

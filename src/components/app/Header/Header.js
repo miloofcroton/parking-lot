@@ -8,12 +8,11 @@ import config from '../../../site/config';
 const Header = () => {
 
   const links = [
-    { label: 'About', path: '/about' },
-    { label: 'Home', path: '/home' },
-    { label: 'Cars', path: '/cars' },
-    { label: 'Lot', path: '/lot' },
-    { label: 'Register', path: '/cars/new' },
-    { label: 'Search', path: '/cars/search' }
+    // { label: 'About', path: '/about' },
+    // { label: 'Home', path: '/home' },
+    { label: 'Members', path: '/cars/search' },
+    { label: 'Lot', path: '/lot/search' },
+    { label: 'Register', path: '/cars/new' }
   ];
   const LinkComponents = links.map(link => {
     return (
