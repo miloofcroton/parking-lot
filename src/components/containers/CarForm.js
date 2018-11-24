@@ -7,9 +7,7 @@ const mapStateToProps = () => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  registerCar(make, model, plate) {
-    dispatch(registerCar(make, model, plate));
-  }
+  registerCar: (make, model, plate) => dispatch(registerCar(make, model, plate))
 });
 
 export default connect(

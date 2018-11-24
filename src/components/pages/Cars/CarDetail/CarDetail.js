@@ -1,15 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CarDetail = ({ car }) => {
-  const { plate, make, model, inLot, lotUses } = car;
+const CarDetail = ({ car, lotCarDeparted, lotCarArrived }) => {
+  const { plate, make, model, inLot, lotUses, id } = car;
+  const lotHandler = () => inLot ? lotCarDeparted(id) : lotCarArrived(id);
+  const lotString = inLot ? 'Remove from lot' : 'Add to lot';
+
   return (
     <div>
       <p>plate: {plate}</p>
       <p>make: {make}</p>
       <p>model: {model}</p>
-      <p>currently in lot: {inLot}</p>
+      <p>currently in lot: {`${inLot}`}</p>
       <p>times in lot: {lotUses}</p>
+      <button onClick={lotHandler}>{lotString}</button>
     </div>
   );
 };

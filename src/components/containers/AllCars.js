@@ -7,10 +7,6 @@ const mapStateToProps = state => ({
   cars: getCars(state)
 });
 
-// const mapDispatchToProps = dispatch => ({
-//   sellPizza: (price) => dispatch(sellCheesePizza(new Date(), price))
-// });
-
 export default connect(
   mapStateToProps
 )(CarList);
