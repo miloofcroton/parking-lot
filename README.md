@@ -39,8 +39,6 @@ Search through lists of cars.
       * CarList.jsx
       * CarSearch.jsx
     * Home.jsx
-* /config - basic site info and colors (might become more useful if there are more variables)
-  * index.js
 * /routes - constants for routing
   * index.js
 * /services - API call functions
