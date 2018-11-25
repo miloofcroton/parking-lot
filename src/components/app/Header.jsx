@@ -16,15 +16,14 @@ const StyledLink = styled(Link)`
   box-sizing: border - box;
 
   text-decoration: none;
-  color: var(--secondary);
+  color: ${colors.secondary};
   margin: 5px;
   padding: 8px;
-  border: 1px solid lightyellow;
-
+  border: 1px solid white;
 
   &:hover {
-    color: var(--darksecondary);
-    border: 1px solid var(--darksecondary);
+    color: ${colors.darksecondary};
+    border: 1px solid ${colors.darksecondary};
   }
 `;
 

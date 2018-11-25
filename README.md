@@ -5,6 +5,7 @@ Search through lists of cars.
 ## New Features
 
 * using styled-components for CSS in JS
+  * add `vscode-styled-components` in VS Code to get syntax highlighting
   * https://alligator.io/react/styled-components/
   * https://www.styled-components.com/docs/basics#getting-started
 * using react-helmet to manage page-level stuff (in the head element) within App.jsx instead of importing at index.html
@@ -64,4 +65,3 @@ See here for more on `index.js`: https://alligator.io/react/index-js-public-inte
     * setupTests.js
 * index.html
 * index.js
-

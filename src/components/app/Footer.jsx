@@ -1,6 +1,6 @@
 import React from 'react';
-import { config, colors } from '../../config';
 import styled from 'styled-components';
+import { config, colors } from '../../config';
 
 const StyledFooter = styled.footer`
   background-color: ${colors.primary};

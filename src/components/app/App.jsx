@@ -4,7 +4,6 @@ import { ROUTES } from '../../routes';
 import { Helmet } from 'react-helmet';
 import { createGlobalStyle } from 'styled-components';
 import 'normalize.css';
-
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 
