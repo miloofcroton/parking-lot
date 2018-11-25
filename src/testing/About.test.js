@@ -1,10 +1,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Pager from '../src/components/lib/Pager.jsx';
+import About from '../components/pages/About.jsx';
 
-describe('<Pager />', () => {
+describe('<About />', () => {
   test('renders', () => {
-    const wrapper = shallow(<Pager />);
+    const wrapper = shallow(<About />);
     expect(wrapper).toMatchSnapshot();
   });
 });

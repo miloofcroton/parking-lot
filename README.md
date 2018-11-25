@@ -6,9 +6,9 @@ search through lists of cars
 
 * /components
   * /app - Contains the header, footer, and react-router views
-    * /App
-    * /Footer
-    * /Header
+    * App.jsx
+    * Footer.jsx
+    * Header.jsx
   * /containers
     * CarDetail.js
     * CarForm.js
@@ -17,17 +17,20 @@ search through lists of cars
     * CarSearchAll.js
     * CarSearchLot.js
   * /lib - Useful components that will get used on multiple pages
-    * /Pager
+    * Pager.jsx
   * /pages - Separate areas of the site, with subcomponents contained within
-    * /About
+    * About.jsx
     * /Cars
-      * /CarCard
-      * /CarDetail
-      * /CarForm
-      * /CarList
-      * /CarSearch
-    * /Home
+      * CarCard.jsx
+      * CarDetail.jsx
+      * CarForm.jsx
+      * CarList.jsx
+      * CarSearch.jsx
+    * Home.jsx
+* /config - basic site info and colors (might become more useful if there are more variables)
+  * index.js
 * /routes - constants for routing
+  * index.js
 * /services - API call functions
 * /state - where all state management happens
   * /actions
@@ -38,30 +41,22 @@ search through lists of cars
   * /selectors
     * cars.js
   * store.js
-* /testing - libs and configs for testing the site
+* /testing - the directory where all tests go
   * /fixtures
-  * setupTests.js
-* /styles - core styles to get the site bootstrapped, includes color variables and core page layout
-  * main.css
-  * variables.css
-* /site - basic site info (might become more useful if there are more variables)
-  * config.js
+  * /mocks
+    * fileMock.js
+  * /setup
+    * setupTests.js
 * index.html
 * index.js
 
 
-## Scaffolding tips:
-
-* `npx crcf -f -p src/components/about` creates functional component with proptypes called 'about'
-* `npx crcf -p src/components/about` creates class component with proptypes called 'about'
-* `npx crcf -f src/components/about` creates functional component called 'about'
-* `npx crcf src/components/about` creates class component called 'about'
-
 ## New Features
 
-* using React Helmet to manage page-level stuff (in the head element) within App.jsx instead of importing at index.html
+* using styled-components for CSS in JS
+* using react-helmet to manage page-level stuff (in the head element) within App.jsx instead of importing at index.html
 * using `.jsx` instead of `.js`, which is a very minor change but makes things more explicit (had to change only the test property in webpack for it to work, plus imports require the explicit `.jsx` if from a file, which kind of like)
-*
+
 
 
 

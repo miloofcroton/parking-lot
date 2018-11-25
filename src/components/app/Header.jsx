@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { config, colors } from '../../site/config';
+import { config, colors } from '../../config';
 
 const StyledHeader = styled.header`
   background-color: ${colors.primary};

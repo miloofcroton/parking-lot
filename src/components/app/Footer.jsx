@@ -1,5 +1,5 @@
 import React from 'react';
-import { config, colors } from '../../site/config';
+import { config, colors } from '../../config';
 import styled from 'styled-components';
 
 const StyledFooter = styled.footer`
