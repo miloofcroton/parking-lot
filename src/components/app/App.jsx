@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 import { ROUTES } from '../../routes';
 import { Helmet } from 'react-helmet';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import 'normalize.css';
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 
@@ -15,6 +14,19 @@ const GlobalStyle = createGlobalStyle`
     justify-content: space-between;
     text-align: center;
     margin: 0;
+  }
+  html {
+    box-sizing: border-box;
+    font-size: 10px;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 2;
   }
 `;
 
