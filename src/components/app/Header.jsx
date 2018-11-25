@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { config, colors } from '../../config';
 
 const StyledHeader = styled.header`
-  background-color: ${colors.primary};
-  color: ${colors.secondary};
+  background-color: ${ ({ theme }) => theme.primary };
+  color: ${ ({ theme }) => theme.secondary };
 `;
 
 const StyledNav = styled.nav`
@@ -16,14 +15,14 @@ const StyledLink = styled(Link)`
   box-sizing: border - box;
 
   text-decoration: none;
-  color: ${colors.secondary};
+  color: ${ ({ theme }) => theme.secondary };
   margin: 5px;
   padding: 8px;
   border: 1px solid white;
 
   &:hover {
-    color: ${colors.darksecondary};
-    border: 1px solid ${colors.darksecondary};
+    color: ${ ({ theme }) => theme.darksecondary };
+    border: 1px solid ${ ({ theme }) => theme.darksecondary };
   }
 `;
 
@@ -46,7 +45,7 @@ const Header = () => {
 
   return (
     <StyledHeader>
-      <h1>{config.title}</h1>
+      <h1>Parking Lot</h1>
       <StyledNav>
         {LinkComponents}
       </StyledNav>

@@ -1,18 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import { config, colors } from '../../config';
 
 const StyledFooter = styled.footer`
-  background-color: ${colors.primary};
+  background-color: ${ ({ theme }) => theme.primary };
   p {
-      color: ${colors.secondary};
+      color: ${ ({ theme }) => theme.secondary };
   }
 `;
 
 const Footer = () => {
   return (
     <StyledFooter>
-      <p>{config.footer}</p>
+      <p>Made with the utmost seriousness - 2018</p>
     </StyledFooter>
   );
 };
