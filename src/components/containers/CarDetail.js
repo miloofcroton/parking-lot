@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import CarDetail from '../pages/Cars/CarDetail';
+import CarDetail from '../pages/Cars/CarDetail.jsx';
 import { getCar } from '../../state/selectors/cars';
 import { carArrived, carDeparted } from '../../state/actions/cars';
 

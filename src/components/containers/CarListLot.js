@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import CarList from '../pages/Cars/CarList';
+import CarList from '../pages/Cars/CarList.jsx';
 import { getLotCars } from '../../state/selectors/cars';
 
 const mapStateToProps = state => ({

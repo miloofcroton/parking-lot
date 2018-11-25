@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import CarSearch from '../pages/Cars/CarSearch';
+import CarSearch from '../pages/Cars/CarSearch.jsx';
 import { updateSearch } from '../../state/actions/cars';
 import { searchCars } from '../../state/selectors/cars';
 
