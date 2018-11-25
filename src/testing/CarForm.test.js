@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import CarForm from '../src/components/pages/cars/CarForm.jsx';
+import CarForm from '../components/pages/Cars/CarForm.jsx';
 
 describe('<CarForm />', () => {
   test('renders', () => {

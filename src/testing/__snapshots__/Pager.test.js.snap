@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Pager /> renders 1`] = `
+<div>
+  <span>
+    1
+     out of 
+     pages
+  </span>
+</div>
+`;
