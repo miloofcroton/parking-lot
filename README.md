@@ -11,12 +11,8 @@ Search through lists of cars.
 * using react-helmet to manage page-level stuff (in the head element) within App.jsx instead of importing at index.html
   * https://github.com/nfl/react-helmet
 * using `.jsx` instead of `.js`, which is a very minor change but makes things more explicit (had to change only the test property in webpack for it to work, plus imports require the explicit `.jsx` if from a file, which kind of like)
-
-## Imports
-
-Importing is slightly different than we're used to. Importing a component comes from the index.js, but ES6 Javascript allows you to import the folder and the index.js will implicitly be imported. In other words, `import App from 'components/App'` is equivalent to `import App from 'components/App/index.js'`. This is better than how we were doing it before, as `import App from 'components/app/App'` (which implicitly does `App.js` for `App`) in my opinion.
-
-See here for more on `index.js`: https://alligator.io/react/index-js-public-interfaces/
+* when possible, use the ES6 feature of implicitly importing index.js from any folder that is itself imported. In other words, `import App from 'components/App'` is equivalent to `import App from 'components/App/index.js'`
+  * https://alligator.io/react/index-js-public-interfaces/
 
 ## Directory Structure
 
