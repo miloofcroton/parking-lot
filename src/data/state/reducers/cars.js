@@ -1,6 +1,6 @@
 import { REGISTER_CAR, UPDATE_SEARCH, CAR_ARRIVED, CAR_DEPARTED } from '../actions/cars';
 import uuid from 'uuid/v4';
-import { cars } from '../../testing/fixtures/fakeCars';
+import { cars } from '../../../testing/fixtures/fakeCars';
 
 const initialState = {
   searchTerm: '',

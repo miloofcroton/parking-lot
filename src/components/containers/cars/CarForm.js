@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import CarForm from '../../pages/cars/CarForm.jsx';
-import { registerCar } from '../../../state/actions/cars';
+import { registerCar } from '../../../data/state/actions/cars';
 
 const mapStateToProps = () => {
   return {};
