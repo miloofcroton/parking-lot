@@ -45,7 +45,7 @@ export default class CarForm extends PureComponent {
   saveCar = event => {
     event.preventDefault();
     const { plate, make, model } = this.state;
-    this.props.registerCar(plate, make, model);
+    this.props.registerCar({ plate, make, model });
     this.props.history.push('/cars');
   };
 

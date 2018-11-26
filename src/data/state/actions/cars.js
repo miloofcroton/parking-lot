@@ -1,11 +1,11 @@
 export const REGISTER_CAR = 'REGISTER_CAR';
-export const registerCar = (make, model, plate) => ({
+export const registerCar = car => ({
   type: REGISTER_CAR,
-  payload: { make, model, plate }
+  payload: car
 });
 
 export const UPDATE_SEARCH = 'UPDATE_SEARCH';
-export const updateSearch = (searchTerm) => ({
+export const updateSearch = searchTerm => ({
   type: UPDATE_SEARCH,
   payload: searchTerm
 });
