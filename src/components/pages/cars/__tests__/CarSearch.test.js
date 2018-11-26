@@ -1,6 +1,20 @@
 import React from 'react';
+import { MemoryRouter } from 'react-router-dom';
 import { shallow } from 'enzyme';
 import CarSearch from '../CarSearch.jsx';
+
+jest.mock('../../../../routes');
+
+// jest.mock('../../../../routes', () => ({
+//   ROUTES: {
+//     CAR_DETAIL: {
+//       linkTo: () => '/'
+//     },
+//     CAR_SEARCH_ALL: {
+//       linkTo: () => '/asdf'
+//     }
+//   }
+// }));
 
 describe('<CarSearch />', () => {
   test('renders', () => {
@@ -23,7 +37,9 @@ describe('<CarSearch />', () => {
         id: '321-321-321-321',
       }
     ];
-    const wrapper = shallow(<CarSearch cars={cars} updateSearch={updateSearchFn} />);
+    const wrapper = shallow(
+      <CarSearch cars={cars} updateSearch={updateSearchFn} history={[]} location={{ search:'asdf' }} />
+    );
     expect(wrapper).toMatchSnapshot();
   });
 });

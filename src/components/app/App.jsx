@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import { ROUTES } from '../../routes';
 import { Helmet } from 'react-helmet';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
@@ -41,7 +41,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Router>
+      <BrowserRouter>
         <Fragment>
           <Helmet>
             <title>Cars</title>
@@ -61,7 +61,7 @@ const App = () => {
           </Switch>
           <Footer />
         </Fragment>
-      </Router>
+      </BrowserRouter>
     </ThemeProvider>
   );
 };
