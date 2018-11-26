@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import CarForm from '../../pages/cars/CarForm.jsx';
+import CarForm from '../../presentations/cars/CarForm.jsx';
 import { registerCar } from '../../../data/state/actions/cars';
 
 const mapStateToProps = () => {
