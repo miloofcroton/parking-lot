@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
-import CarDetail from '../pages/cars/CarDetail.jsx';
-import { getCar } from '../../state/selectors/cars';
-import { carArrived, carDeparted } from '../../state/actions/cars';
+import CarDetail from '../../pages/cars/CarDetail.jsx';
+import { getCar } from '../../../state/selectors/cars';
+import { carArrived, carDeparted } from '../../../state/actions/cars';
 
 const mapStateToProps = (state, props) => ({
   car: getCar(state, props.match.params.id)

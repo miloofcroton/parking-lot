@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
-import CarSearch from '../pages/cars/CarSearch.jsx';
-import { updateSearch } from '../../state/actions/cars';
-import { searchCars } from '../../state/selectors/cars';
+import CarSearch from '../../pages/cars/CarSearch.jsx';
+import { updateSearch } from '../../../state/actions/cars';
+import { searchCars } from '../../../state/selectors/cars';
 
 const mapStateToProps = state => ({
   cars: searchCars(state)
