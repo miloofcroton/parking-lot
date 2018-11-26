@@ -1,7 +1,10 @@
-import React from 'react';
-import { REGISTER_CAR, registerCar } from '../cars.js';
+import {
+  REGISTER_CAR, registerCar,
+  UPDATE_SEARCH, updateSearch
+} from '../cars.js';
 
 describe('cars actions', () => {
+
   test('registers car', () => {
     const car = {
       plate: 'abc123',
@@ -12,4 +15,14 @@ describe('cars actions', () => {
     expect(action.type).toEqual(REGISTER_CAR);
     expect(action.payload).toEqual(car);
   });
+
+  test('updates the search', () => {
+    const searchTerm = 'asdf';
+    const action = updateSearch(searchTerm);
+    expect(action.type).toEqual(UPDATE_SEARCH);
+    expect(action.payload).toEqual(searchTerm);
+  });
+
+
+
 });
