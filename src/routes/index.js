@@ -1,5 +1,5 @@
-import About from '../components/pages/About.jsx';
-import Home from '../components/pages/Home.jsx';
+import About from '../components/pages/about/About.jsx';
+import Home from '../components/pages/home/Home.jsx';
 import CarListAll from '../components/containers/CarListAll';
 import CarListLot from '../components/containers/CarListLot';
 import CarSearchAll from '../components/containers/CarSearchAll';
