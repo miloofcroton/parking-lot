@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import CarSearch from '../components/pages/Cars/CarSearch.jsx';
+import CarSearch from '../CarSearch.jsx';
 
 describe('<CarSearch />', () => {
   test('renders', () => {

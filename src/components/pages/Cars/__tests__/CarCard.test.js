@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import CarCard from '../components/pages/Cars/CarCard.jsx';
+import CarCard from '../CarCard.jsx';
 
 describe('<CarCard />', () => {
   test('renders', () => {

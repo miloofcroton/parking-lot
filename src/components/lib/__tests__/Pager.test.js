@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Pager from '../components/lib/Pager.jsx';
+import Pager from '../Pager.jsx';
 
 describe('<Pager />', () => {
   test('renders', () => {
