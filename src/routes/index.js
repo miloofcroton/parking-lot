@@ -1,11 +1,11 @@
-import About from '../components/presentations/about/About.jsx';
-import Home from '../components/presentations/home/Home.jsx';
-import CarListAll from '../components/containers/cars/CarListAll';
-import CarListLot from '../components/containers/cars/CarListLot';
-import CarSearchAll from '../components/containers/cars/CarSearchAll';
-import CarSearchLot from '../components/containers/cars/CarSearchLot';
-import CarDetail from '../components/containers/cars/CarDetail';
-import CarForm from '../components/containers/cars/CarForm';
+import About from '../components/presentational/about/About.jsx';
+import Home from '../components/presentational/home/Home.jsx';
+import CarListAll from '../components/container/cars/CarListAll';
+import CarListLot from '../components/container/cars/CarListLot';
+import CarSearchAll from '../components/container/cars/CarSearchAll';
+import CarSearchLot from '../components/container/cars/CarSearchLot';
+import CarDetail from '../components/container/cars/CarDetail';
+import CarForm from '../components/container/cars/CarForm';
 
 export const ROUTES = {
   ABOUT: {

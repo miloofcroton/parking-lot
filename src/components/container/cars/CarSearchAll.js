@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
-import CarSearch from '../../presentations/cars/CarSearch.jsx';
+import CarSearch from '../../presentational/cars/CarSearch.jsx';
 import { updateSearch } from '../../../data/state/actions/cars';
-import { searchLotCars } from '../../../data/state/selectors/cars';
+import { searchCars } from '../../../data/state/selectors/cars';
 
 const mapStateToProps = state => ({
-  cars: searchLotCars(state)
+  cars: searchCars(state)
 });
 
 const mapDispatchToProps = dispatch => ({
