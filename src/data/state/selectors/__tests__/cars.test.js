@@ -37,7 +37,4 @@ describe('cars selector', () => {
     expect(searchedCars).toContainEqual(searchResults);
   });
 
-
-
-
 });
