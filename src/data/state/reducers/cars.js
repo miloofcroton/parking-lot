@@ -1,10 +1,10 @@
 import { REGISTER_CAR, UPDATE_SEARCH, CAR_ARRIVED, CAR_DEPARTED } from '../actions/cars';
 import uuid from 'uuid/v4';
-import { cars } from '../../../testing/fixtures/fakeCars';
+import { fakeCars } from '../../../testing/fixtures/fakeCars';
 
 const initialState = {
   searchTerm: '',
-  list: cars
+  list: fakeCars
 };
 
 export default function reducer(state = initialState, { type, payload }) {

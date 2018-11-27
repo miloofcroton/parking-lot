@@ -1,16 +1,13 @@
 import {
   REGISTER_CAR, registerCar,
   UPDATE_SEARCH, updateSearch
-} from '../cars.js';
+} from '../cars';
+import { fakeCar } from '../../../../testing/fixtures/fakeCars';
 
 describe('cars actions', () => {
 
   test('registers car', () => {
-    const car = {
-      plate: 'abc123',
-      make: 'Toyota',
-      model: 'Tacoma'
-    };
+    const car = fakeCar();
     const action = registerCar(car);
     expect(action.type).toEqual(REGISTER_CAR);
     expect(action.payload).toEqual(car);
