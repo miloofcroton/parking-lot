@@ -30,7 +30,6 @@ describe('reducer', () => {
     const keys = Object.keys(newState.cars.list);
     const newKey = keys.filter(key => newState.cars.list[key].plate == newCar.plate)[0];
     expect(newState).toEqual({ ...state, cars: { ...state.cars, list: { ...state.cars.list, ...{ [newKey]: newCar } } } });
-
   });
 
   test('handles a UPDATE_SEARCH and updates searchTerm in state', () => {
