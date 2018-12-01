@@ -38,4 +38,4 @@ export const fakeCarNewWithId = () => {
 };
 
 export const fakeCars = Array.apply(null, { length: 100 })
-  .reduce(acc => {({ ...acc, ...fakeCarWithId() }); }, {});
+  .reduce(acc => ({ ...acc, ...fakeCarWithId() }), {});
